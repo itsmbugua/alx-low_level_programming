@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - A C that prints a simple line
  *
@@ -7,6 +8,6 @@
 int main(void)
 {
 
-	printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+	system("echo 'and that piece of art is useful\" - Dora Korpar, 2015-10-19'");
 	return (1);
 }
