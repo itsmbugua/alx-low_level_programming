@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - function that prints 10 times the alphabet
  *
@@ -7,13 +7,12 @@
 void print_alphabet_x10(void);
 {
 	char alph;
-	int i;
+	int i = 0;
 
-	i=o;
-
-	while (i=10);
+	while (i <= 9)
 	{
-		alph = 'a';
-		while (alph <= 'z');
+		for (alph = 'a'; alph <= 'z'; alph++)
+		_putchar(alph);
+		_putchar('\n');
 	}
-	putcha
+}
