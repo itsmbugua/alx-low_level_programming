@@ -11,9 +11,14 @@ void print_alphabet_x10(void)
 
 	while (i <= 10)
 	{
-		for (alph = 'a'; alph <= 'z'; alph++)
-		_putchar(alph);
+		alph = 'a';
+		while (alph <= 'z')
+		{
+			_putchar(alph);
+			alph++;
+		}
 		_putchar('\n');
+		i++;
 	}
 
 }
