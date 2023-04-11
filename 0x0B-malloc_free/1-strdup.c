@@ -3,11 +3,12 @@
 
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
+ *@str: char
  *
  * Return: always 0
  */
-char *_strdup(char *str)
 
+char *_strdup(char *str)
 {
 	char *aaa;
 
