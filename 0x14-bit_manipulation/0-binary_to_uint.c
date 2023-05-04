@@ -8,29 +8,18 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int x, i, binary, base;
+	int i;
+	unsigned int dec_val = 0;
 
 	if (!b)
 		return (0);
 
-	for (i = 0; b[i] != '\0'; i++)
+	for (i = 0; b[i]; i++)
 	{
-		if (b[i] != '0' && b[i] != '1')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
+		dec_val = 2 * dec_val + (b[i] - '0');
 	}
 
-	x = atoi(b);
-	base = 1;
-	binary = 0;
-
-	for (i = 0; x > 0; i++)
-	{
-		if (x & 1)
-			binary += (1 * base);
-
-		x = x / 10;
-		base = base * 2;
-	}
-
-	return (binary);
+	return (dec_val);
 }
